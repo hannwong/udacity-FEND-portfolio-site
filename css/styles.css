@@ -19,3 +19,8 @@ body {
 .title-logo {
   margin: 20px;
 }
+
+hr.header-separator {
+  border-width: 5px;
+  border-color: #bcbbbb;
+}
