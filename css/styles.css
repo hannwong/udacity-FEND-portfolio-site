@@ -24,3 +24,17 @@ hr.header-separator {
   border-width: 5px;
   border-color: #bcbbbb;
 }
+
+.modal-header {
+  text-align: center;
+}
+
+.modal-body img {
+  margin: 0 auto;
+}
+
+.modal-body p {
+  max-width: 360px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
