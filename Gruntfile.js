@@ -47,6 +47,12 @@ module.exports = function(grunt) {
             '-resize 500x154 ' +
             'images_src/horses.jpg images/horses_small.jpg');
 
+          // volt.jpg. Only 1 size.
+          commands.push(command +
+            '-crop 3057x1698+207+250 ' +
+            '-resize 360x200 ' +
+            'images_src/volt.jpg images/volt.jpg');
+
           return commands.join(' && ');
         }
       }

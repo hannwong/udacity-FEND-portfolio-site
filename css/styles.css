@@ -8,8 +8,14 @@ div.banner img.img-responsive {
   width: 100%; /* Justify banner with edges. */
 }
 
+div.featured-work > div {
+  /* Breathing room between works displayed in a column. */
+  /* Also adds space away from bottom of viewport. */
+  padding-bottom: 1em;
+}
+
 div.featured-work img.img-responsive {
-  margin: 0 auto;
+  margin: 0 auto; /* Centers image when works are displayed in a column. */
 }
 
 .text-muted {
