@@ -4,3 +4,6 @@
 /css/bootstrap.min.css
 /js/bootstrap.js
 /js/bootstrap.min.js
+
+/node_modules/
+/images/

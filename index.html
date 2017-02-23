@@ -29,9 +29,12 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
-        <img class="img-responsive theme-img" src="http://placehold.it/1140x350"
-             alt="Central Thematic Image">
+      <div class="col-md-12 banner">
+        <picture>
+          <source media="(min-width: 1140px)" srcset="images/horses_large.jpg" />
+          <source media="(min-width: 800px)" srcset="images/horses_medium.jpg" />
+          <img class="img-responsive" src="images/horses_small.jpg" alt="Central Thematic Image">
+        </picture>
       </div>
     </div>
     <div class="row">
@@ -39,7 +42,7 @@
         <h2 class="text-muted">Featured Work</h2>
       </div>
     </div>
-    <div class="row text-center">
+    <div class="row text-center featured-work">
       <div class="col-md-4">
         <img class="img-responsive" src="http://placehold.it/360x200"
              data-toggle="modal" data-target="#project1">

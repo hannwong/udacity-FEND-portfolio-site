@@ -4,6 +4,14 @@ body {
   font-weight: 300;
 }
 
+div.banner img.img-responsive {
+  width: 100%; /* Justify banner with edges. */
+}
+
+div.featured-work img.img-responsive {
+  margin: 0 auto;
+}
+
 .text-muted {
   color: #bcbbbb;
 }
