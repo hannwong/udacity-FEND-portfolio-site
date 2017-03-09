@@ -75,6 +75,21 @@ module.exports = function(grunt) {
       }
     },
 
+    sass: {
+      dist: {
+        options: {
+          sourcemap: 'none'
+        },
+        files: [{
+          expand: true,
+          cwd: 'scss',
+          src: ['*.scss'],
+          dest: 'css',
+          ext: '.css'
+        }]
+      }
+    },
+
     /* Clear out the images directory if it exists */
     clean: {
       dev: {
@@ -96,6 +111,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-mkdir');
   grunt.loadNpmTasks('grunt-imageoptim');
   grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.registerTask('art-direct', ['exec:art_direct']);
   grunt.registerTask('default',
     ['clean', 'mkdir', 'art-direct']);
