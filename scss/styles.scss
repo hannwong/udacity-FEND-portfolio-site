@@ -1,54 +1,76 @@
+$font-stack: 'Lato', sans-serif;
+$primary-color: #747704;
+$primary-font-weight: 300;
+
+$featured-work-bottom-pad: 3em;
+
+$font-thin-weight: 100;
+$font-muted-color: #bcbbbb;
+$font-super-size: 60px;
+
+$title-logo-margin: 20px;
+
+$header-seperator-width: 5px;
+
+$modal-header-text-align: center;
+$modal-body-p-max-width: 360px;
+$modal-body-p-margin-top: 10px;
+
 body {
-  font-family: 'Lato', sans-serif;
-  color: #747704;
-  font-weight: 300;
+  font-family: $font-stack;
+  color: $primary-color;
+  font-weight: $primary-font-weight;
 }
 
 div.banner img.img-responsive {
   width: 100%; /* Justify banner with edges. */
 }
 
-div.featured-work > div {
-  /* Breathing room between works displayed in a column. */
-  /* Also adds space away from bottom of viewport. */
-  padding-bottom: 3em;
-}
+div.featured-work {
+  > div {
+    /* Breathing room between works displayed in a column. */
+    /* Also adds space away from bottom of viewport. */
+    padding-bottom: $featured-work-bottom-pad;
+  }
 
-div.featured-work img.img-responsive {
-  margin: 0 auto; /* Centers image when works are displayed in a column. */
+  img.img-responsive {
+    margin: 0 auto; /* Centers image when works are displayed in a column. */
+  }
 }
 
 .text-muted {
-  color: #bcbbbb;
+  color: $font-muted-color;
 }
 
 .text-thin {
-  font-weight: 100;
+  font-weight: $font-thin-weight;
 }
 
 .title-super {
-  font-size: 60px;
+  font-size: $font-super-size;
 }
 
 .title-logo {
-  margin: 20px;
+  margin: $title-logo-margin;
 }
 
 hr.header-separator {
-  border-width: 5px;
-  border-color: #bcbbbb;
+  border-width: $header-seperator-width;
+  border-color: $font-muted-color;
 }
 
 .modal-header {
-  text-align: center;
+  text-align: $modal-header-text-align;
 }
 
-.modal-body img {
-  margin: 0 auto;
-}
+.modal-body {
+  img {
+    margin: 0 auto;
+  }
 
-.modal-body p {
-  max-width: 360px;
-  margin: 0 auto;
-  margin-top: 10px;
+  p {
+    max-width: $modal-body-p-max-width;
+    margin: 0 auto;
+    margin-top: $modal-body-p-margin-top;
+  }
 }
