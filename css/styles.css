@@ -11,7 +11,7 @@ div.banner img.img-responsive {
 div.featured-work > div {
   /* Breathing room between works displayed in a column. */
   /* Also adds space away from bottom of viewport. */
-  padding-bottom: 1em;
+  padding-bottom: 3em;
 }
 
 div.featured-work img.img-responsive {
