@@ -21,7 +21,7 @@
   </svg>
 
   <div class="container">
-    <div class="row">
+    <header class="row">
       <div class="col-md-6">
         <a href="//github.com/hannwong/udacity-FEND-portfolio-site" target="_blank" title="Home page for course examples" alt="Portfolio Logo">
           <svg id="logo">
@@ -34,7 +34,7 @@
         <h1 class="title-super text-thin">Jane Doette</h1>
         <h4>Front-end Ninja</h4>
       </div>
-    </div>
+    </header>
     <div class="row">
       <div class="col-md-12">
         <hr class="header-separator">
@@ -49,38 +49,51 @@
         </picture>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 intro-text">
+    <section class="row intro-text">
+      <div class="col-md-12">
         <p>This is a submitted work for Udacity's Front-End Web Developer Nanodegree, project "<i>Build a Portfolio Site</i>". The lead up to this project, in which I attempt to create a web page from scratch, were a series of lessons on <i>responsive design</i> and </i>responsive images</i> and ungraded projects on which I could practice the concepts taught. I had made numerous improvements and corrections to Udacity's lessons and official solutions for ungraded projects. <b>Hopefully, that can earn me some paid work from Udacity and/or Udacity's hiring partners</b>. I'm living hand-to-mouth as it is now, and face serious risk of starving to death. Completing this Nanodegree is obviously out of the question, while I work day and night to feed myself.</p>
         <p>As for Udacity's hiring and Udacity's hiring partners and advertised "<i>work-ready skills</i>" outcome of Udacity's Nanodegrees, they don't seem to apply to non-Americans at all. My numerous pleas to Udacity to give me some paid work has met with rejections despite my obvious skills matching their job requirements. You can see my skills (from GitHub) are definitely far above and beyond those taught in this Nanodegree.</p>
         <p>To add devastation to my desperation, Udacity had happily let me pay for Self-Driving Cars Nanodegree (upfront payment of $800), happily let me miss lessons and deadlines there for 3 months, all while I'm still struggling to complete this Nanodegree. I'm literally penniless after paying upfront for the Self-Driving Cars Nanodegree.</p>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="text-muted">Featured Work</h2>
+    </section>
+    <section class="featured-work">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-muted">Featured Work</h2>
+        </div>
       </div>
-    </div>
-    <div class="row text-center featured-work">
-      <div class="col-md-4">
-        <img class="img-responsive" src="images/volt.jpg"
-             data-toggle="modal" data-target="#project1" alt="picture of project 1">
-        <h3>Build a Portfolio Site</h3>
-        <a href="https://github.com/hannwong/udacity-FEND-portfolio-site" target="_blank">https://github.com/hannwong/udacity-FEND-portfolio-site</a>
+      <div class="row text-center featured-work">
+        <div class="col-md-4">
+          <img class="img-responsive" src="images/volt.jpg"
+               data-toggle="modal" data-target="#project1" alt="picture of project 1">
+          <h3>Build a Portfolio Site</h3>
+          <a href="https://github.com/hannwong/udacity-FEND-portfolio-site" target="_blank">https://github.com/hannwong/udacity-FEND-portfolio-site</a>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive" src="images/still_life.jpg"
+               data-toggle="modal" data-target="#project2" alt="picture of project 2">
+          <h3>Responsive Images</h3>
+          <a href="https://github.com/hannwong/udacity-responsive-images" target="_blank">https://github.com/hannwong/udacity-responsive-images</a>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive" src="images/dog.jpg"
+               data-toggle="modal" data-target="#project3" alt="picture of project 3">
+          <h3>Responsive Design</h3>
+          <a href="https://github.com/hannwong/udacity-FEND-brighton-times" target="_blank">https://github.com/hannwong/udacity-FEND-brighton-times</a>
+        </div>
       </div>
-      <div class="col-md-4">
-        <img class="img-responsive" src="images/still_life.jpg"
-             data-toggle="modal" data-target="#project2" alt="picture of project 2">
-        <h3>Responsive Images</h3>
-        <a href="https://github.com/hannwong/udacity-responsive-images" target="_blank">https://github.com/hannwong/udacity-responsive-images</a>
-      </div>
-      <div class="col-md-4">
-        <img class="img-responsive" src="images/dog.jpg"
-             data-toggle="modal" data-target="#project3" alt="picture of project 3">
-        <h3>Responsive Design</h3>
-        <a href="https://github.com/hannwong/udacity-FEND-brighton-times" target="_blank">https://github.com/hannwong/udacity-FEND-brighton-times</a>
-      </div>
-    </div>
+    </section>
+    <footer>
+      <p>&copy; Copyright 2016-
+      <script language="JavaScript" type="text/javascript">
+          now = new Date
+          theYear=now.getYear()
+          if (theYear < 1900)
+          theYear=theYear+1900
+          document.write(theYear)
+      </script>
+      <a href="https://profiles.udacity.com/u/jonwong" target="_blank">Jon Wong</a>. All rights reserved.</p>
+    </footer>
   </div>
 
   <!-- Modal -->

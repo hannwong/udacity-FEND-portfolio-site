@@ -19,7 +19,7 @@ div.banner {
   }
 }
 
-div.intro-text::first-line {
+section.intro-text div::first-line {
   font-size: $intro-text-first-line-size;
 }
 
@@ -74,4 +74,9 @@ hr.header-separator {
     margin-top: $modal-body-p-margin-top;
     overflow: auto;
   }
+}
+
+footer {
+  text-align: $modal-header-text-align;
+  padding-bottom: $featured-work-bottom-pad;
 }
