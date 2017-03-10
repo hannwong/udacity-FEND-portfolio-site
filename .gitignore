@@ -1,9 +1,8 @@
-/css/bootstrap-theme.css
-/css/bootstrap-theme.min.css
-/css/bootstrap.css
-/css/bootstrap.min.css
+/css/
 /js/bootstrap.js
 /js/bootstrap.min.js
 
 /node_modules/
 /images/
+
+/.sass-cache/

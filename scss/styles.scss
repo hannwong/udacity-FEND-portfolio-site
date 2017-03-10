@@ -1,0 +1,60 @@
+@import 'variables';
+
+body {
+  font-family: $font-stack;
+  color: $primary-color;
+  font-weight: $primary-font-weight;
+}
+
+div.banner img.img-responsive {
+  width: 100%; /* Justify banner with edges. */
+}
+
+div.featured-work {
+  > div {
+    /* Breathing room between works displayed in a column. */
+    /* Also adds space away from bottom of viewport. */
+    padding-bottom: $featured-work-bottom-pad;
+  }
+
+  img.img-responsive {
+    margin: 0 auto; /* Centers image when works are displayed in a column. */
+  }
+}
+
+.text-muted {
+  color: $font-muted-color;
+}
+
+.text-thin {
+  font-weight: $font-thin-weight;
+}
+
+.title-super {
+  font-size: $font-super-size;
+}
+
+.title-logo {
+  margin: $title-logo-margin;
+}
+
+hr.header-separator {
+  border-width: $header-seperator-width;
+  border-color: $font-muted-color;
+}
+
+.modal-header {
+  text-align: $modal-header-text-align;
+}
+
+.modal-body {
+  img {
+    margin: 0 auto;
+  }
+
+  p {
+    max-width: $modal-body-p-max-width;
+    margin: 0 auto;
+    margin-top: $modal-body-p-margin-top;
+  }
+}
