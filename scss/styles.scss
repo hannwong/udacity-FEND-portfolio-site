@@ -48,13 +48,17 @@ hr.header-separator {
 }
 
 .modal-body {
+  max-height: $modal-body-max-height;
+
   img {
     margin: 0 auto;
   }
 
-  p {
+  > div {
     max-width: $modal-body-p-max-width;
+    max-height: 30%;
     margin: 0 auto;
     margin-top: $modal-body-p-margin-top;
+    overflow: auto;
   }
 }

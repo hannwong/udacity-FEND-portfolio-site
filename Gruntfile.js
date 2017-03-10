@@ -59,6 +59,12 @@ module.exports = function(grunt) {
             '-resize 360x200 ' +
             'images_src/still_life.jpg images/still_life.jpg');
 
+          // dog.jpg.
+          commands.push(command +
+            '-crop 2047x1137+0+90 ' +
+            '-resize 360x200 ' +
+            'images_src/dog.jpg images/dog.jpg');
+
           return commands.join(' && ');
         }
       }
