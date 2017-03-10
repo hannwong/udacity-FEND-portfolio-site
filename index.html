@@ -12,11 +12,23 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
+  <svg width="0" height="0">
+    <defs>
+      <symbol id="logo" viewBox="0 0 24 24">
+        <path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
+      </symbol>
+    </defs>
+  </svg>
+
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img class="title-logo img-responsive" src="http://placehold.it/100x100"
-             alt="Udacity Logo">
+        <a href="//github.com/hannwong/udacity-FEND-portfolio-site" target="_blank" title="Home page for course examples" alt="Portfolio Logo">
+          <svg id="logo">
+            <title>Responsive logo</title>
+            <use xlink:href="#logo" />
+          </svg>
+        </a>
       </div>
       <div class="col-md-6 text-right text-uppercase">
         <h1 class="title-super text-thin">Jane Doette</h1>
@@ -41,6 +53,7 @@
       <div class="col-md-12 intro-text">
         <p>This is a submitted work for Udacity's Front-End Web Developer Nanodegree, project "<i>Build a Portfolio Site</i>". The lead up to this project, in which I attempt to create a web page from scratch, were a series of lessons on <i>responsive design</i> and </i>responsive images</i> and ungraded projects on which I could practice the concepts taught. I had made numerous improvements and corrections to Udacity's lessons and official solutions for ungraded projects. <b>Hopefully, that can earn me some paid work from Udacity and/or Udacity's hiring partners</b>. I'm living hand-to-mouth as it is now, and face serious risk of starving to death. Completing this Nanodegree is obviously out of the question, while I work day and night to feed myself.</p>
         <p>As for Udacity's hiring and Udacity's hiring partners and advertised "<i>work-ready skills</i>" outcome of Udacity's Nanodegrees, they don't seem to apply to non-Americans at all. My numerous pleas to Udacity to give me some paid work has met with rejections despite my obvious skills matching their job requirements. You can see my skills (from GitHub) are definitely far above and beyond those taught in this Nanodegree.</p>
+        <p>To add devastation to my desperation, Udacity had happily let me pay for Self-Driving Cars Nanodegree (upfront payment of $800), happily let me miss lessons and deadlines there for 3 months, all while I'm still struggling to complete this Nanodegree. I'm literally penniless after paying upfront for the Self-Driving Cars Nanodegree.</p>
       </div>
     </div>
     <div class="row">
@@ -51,19 +64,19 @@
     <div class="row text-center featured-work">
       <div class="col-md-4">
         <img class="img-responsive" src="images/volt.jpg"
-             data-toggle="modal" data-target="#project1">
+             data-toggle="modal" data-target="#project1" alt="picture of project 1">
         <h3>Build a Portfolio Site</h3>
         <a href="https://github.com/hannwong/udacity-FEND-portfolio-site" target="_blank">https://github.com/hannwong/udacity-FEND-portfolio-site</a>
       </div>
       <div class="col-md-4">
         <img class="img-responsive" src="images/still_life.jpg"
-             data-toggle="modal" data-target="#project2">
+             data-toggle="modal" data-target="#project2" alt="picture of project 2">
         <h3>Responsive Images</h3>
         <a href="https://github.com/hannwong/udacity-responsive-images" target="_blank">https://github.com/hannwong/udacity-responsive-images</a>
       </div>
       <div class="col-md-4">
         <img class="img-responsive" src="images/dog.jpg"
-             data-toggle="modal" data-target="#project3">
+             data-toggle="modal" data-target="#project3" alt="picture of project 3">
         <h3>Responsive Design</h3>
         <a href="https://github.com/hannwong/udacity-FEND-brighton-times" target="_blank">https://github.com/hannwong/udacity-FEND-brighton-times</a>
       </div>
@@ -78,7 +91,7 @@
           <h4 class="modal-title" id="myModalLabel">Build a Portfolio Site</h4>
         </div>
         <div class="modal-body">
-          <img class="img-responsive" src="images/volt.jpg">
+          <img class="img-responsive" src="images/volt.jpg" alt="picture of project 1">
           <div>
             <p>This is my 1st attempt at creating a responsive web page from scratch. This project is submitted to Udacity and graded. Combining lessons from responsive design (see Featured Work #3) and lessons from responsive images (Featured Work #2), I was able to complete this project.</p>
             <p><i>Responsive design</i> allows my web page to be viewed on devices of different screen sizes, and even on different viewport sizes of browsers on computers that allow browsers to be resized. <i>Responsive images</i> directs the browser to download the correct images for the various screen sizes. This also forms part of the effort to optimize the web page --- significant amount of bandwidth is saved by downloading (almost) exactly the right-sized images, rather than downloading a huge image viewable on large computer screens and pointlessly overkill on smaller mobile screens.</p>
@@ -98,7 +111,7 @@
           <h4 class="modal-title" id="myModalLabel">Responsive Images</h4>
         </div>
         <div class="modal-body">
-          <img class="img-responsive" src="images/still_life.jpg">
+          <img class="img-responsive" src="images/still_life.jpg" alt="picture of project 2">
           <div>
             <p>This project (ungraded) covers concepts for responsive images. Though the project is ungraded, I made some much needed corrections and improvements to Udacity's official solution.</p>
             <p>Udacity's official solution does not perform cropping (via <tt>grunt-responsive-images</tt>) properly because <tt>grunt-responsive-images</tt> has a crop bug. See my correction at: <a href="https://github.com/andismith/grunt-responsive-images/pull/124" target="_blank">https://github.com/andismith/grunt-responsive-images/pull/124</a>. Eventually, because <tt>grunt-responsive-images</tt> does not adequately expose the full power of the underlying <tt>GraphicsMagick</tt> it uses, I had to fall back on invoking <tt>GraphicsMagick</tt> directly (via <tt>grunt-exec</tt>). I'll create a new and better <tt>grunt-responsive-images</tt> when I have the time; I'm currently living hand-to-mouth and am actually in danger of starving to death.</p>
@@ -118,7 +131,7 @@
           <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
         </div>
         <div class="modal-body">
-          <img class="img-responsive" src="images/dog.jpg">
+          <img class="img-responsive" src="images/dog.jpg" alt="picture of project 3">
           <div>
             <p>In this ungraded project, I practiced concepts related to <i>responsive design</i>. For example, I designed for the smallest screen size first, laying out the most important pieces of information on the web page given the limited screen space.</p>
           </div>
