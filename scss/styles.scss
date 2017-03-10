@@ -6,8 +6,16 @@ body {
   font-weight: $primary-font-weight;
 }
 
-div.banner img.img-responsive {
-  width: 100%; /* Justify banner with edges. */
+div.banner {
+  margin-bottom: $banner-margin-bottom;
+
+  img.img-responsive {
+    width: 100%; /* Justify banner with edges. */
+  }
+}
+
+div.intro-text::first-line {
+  font-size: $intro-text-first-line-size;
 }
 
 div.featured-work {
