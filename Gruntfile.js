@@ -120,6 +120,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.registerTask('art-direct', ['exec:art_direct']);
   grunt.registerTask('default',
-    ['clean', 'mkdir', 'art-direct']);
+    ['clean', 'mkdir', 'sass', 'art-direct']);
   grunt.registerTask('optim-img', ['imageoptim']);
 };
